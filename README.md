@@ -1,1 +1,1 @@
-# PRODIGY_WD_01
+Responsive Travel Landing Page using HTML,CSS and JavaScript
