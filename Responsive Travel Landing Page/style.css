@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: darkslategray;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 79, 79, 0.8),rgba(47,79,79,0.8)), url('assets/bg1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    color: #E0E0E0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.logo-container img{
+    width: 60px;
+    height: auto;
+    margin: 10px;
+}
+.logo-container h1{
+    font-size: 30px;
+}
+@media (min-width: 769px) {
+  .menubar ul li:not(:last-child)::after {
+    content: " |";
+    color: #E0E0E0;
+    margin-left: 5px;
+  }
+}
+.menubar ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-right: 60px;
+}
+.menubar li:hover {
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+} 
+.content {
+  text-align: left;
+  padding: 10px;
+}
+.content h1 {
+  max-width: 550px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  color: lightcyan;
+}
+.content h2 {
+  margin-bottom: 16px;
+  max-width: 450px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: lightcyan;
+}
+.content p {
+  margin-bottom: 25px;
+  max-width: 400px;
+  color: lightcyan;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  width: auto;
+  font-size: 18px;
+  color: white;
+  background-color: teal;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: lightslategray;
+}
+
+
+.content-wrapper {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.content-img {
+  flex: 0 0 650px;
+  margin-right: 50px;
+}
+
+.content-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .content-img {
+    order: -1; 
+    flex: 0 0 0px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0; 
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content-img img {
+    border-radius: 20px;
+  }
+  .btn {
+    flex: 0 0 0px;
+  }
+  .btn{
+    padding-left: 125px;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .btn {
+    display: block;
+    margin: 20px auto 0px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .web{
+    text-align: center;
+    gap: 5px;
+  }
+}
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 55px;
+}
+
+.socials a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;  
+  background: black;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.socials a:hover {
+  background: lightblue;
+  color: black;
+}
+
+.web{
+  font-size: 20px;
+  color: lightcyan;
+  cursor: pointer;
+  padding-left: 75px;
+  margin-top: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .menubar {
+        display: none;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        background: darkslategray;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); 
+    }
+
+
+    .menubar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menubar.active {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+} 
+
